@@ -121,11 +121,14 @@ header nav {
   margin: auto;
 }
 
-header nav ul { list-style: none; }
+header nav ul { 
+	text-align: center;
+}
 
 header nav ul li {
-  float: left;
+  display: inline-block;
   position: relative;
+  padding-left: 10px;
 }
 
 header nav:after {
@@ -137,7 +140,7 @@ header nav:after {
 header nav ul li a {
   color: black;
   display: block;
-  padding: 20px;
+  
   text-decoration: none;
   font-size: 14px;
   font-family: tahoma;
@@ -156,7 +159,7 @@ header nav ul li .children {
   display: none;
   background: white;
   position: absolute;
-  width: 150%;
+  width: 100%;
   z-index: 1000;
 }
 
@@ -168,14 +171,17 @@ header nav ul li .children li {
   border-bottom: 1px solid #30222299;
 }
 
-header nav ul li .children li a { margin-left: 30px; }
+header nav ul li .children li a { margin-left: 0px; }
 
 header nav ul li .fa-angle-down {
   position: relative;
   top: 3px;
 }
 
-
+.nav-bar-2-ul
+{
+	padding-top: 25px;
+}
 
 @media all and (max-width: 800px) {
 
@@ -183,15 +189,39 @@ header nav ul li .fa-angle-down {
 body { padding-top: 80px; }
 
 
+.nav-bar-2-ul 
+{
+	margin-top: 100px;
+}
+
+header nav ul { 
+	text-align: left;
+}
+
+header nav ul li {
+  display: inline-block;
+  position: relative;
+  
+}
+
+.logo-img
+{
+	visibility: hidden;
+}
+
 .logo-img-li{
 	visibility: hidden;
 }
 
 .nav-bar-2-ul > li
 {
-	top:-80px;
+	top:-100px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 
 }
+
+
 
 .top_bar
 {
@@ -207,7 +237,7 @@ body { padding-top: 80px; }
 .nav-bar-2{
 	overflow-y: scroll;
 	width:100%;
-	height: 300px;
+	height: 60%;
 	margin-top:5px;
 }
 
@@ -378,9 +408,10 @@ header nav ul li .fa-angle-down {
 					</div>
 					<!-- navigation -->
 					<nav class="nav-bar-2" id="nav-bar-2" style="top: 55px;">
-					  <ul class="nav-bar-2-ul" style="display:inline;float:none;text-align: center;">
-						<li class="logo-img-li"><img id="logo-2" class="logo-img" src="images\logo.png" alt="logo" style="margin-left: 105px;float:left;" draggable="false"></li>
-						<li><a href="#" class="margin-left:10px;"><i class="fa fa-home"></i>Home</a></li>
+					<img id="logo-2" class="logo-img" src="images\logo.png" alt="logo" style="margin-left: 105px;float:left;" draggable="false">
+						
+					  <ul class="nav-bar-2-ul" >
+						<li><a href="#" class="margin-left:10px;"><i class="fa fa-home"></i> Home</a></li>
 						<li><a href="#"><i class="fa fa-cog"></i>About</a></li>
 						<li class="sub-menu">
 						  <a href="#"><i class="fa fa-street-view"></i>Services<i class="fa fa-angle-down"></i></a>
@@ -420,7 +451,7 @@ header nav ul li .fa-angle-down {
 							</ul>
 						</li>
 						<li><a href="#"><i class=""></i>Network</a></li>
-						<li class="sub-menu" style="right: -1%;">
+						<li class="sub-menu">
 							<a href="#"><i class="fa fa-street-view"></i>Registration<i class="fa fa-angle-down"></i></a>
 							<!-- children nav -->
 							<ul class="children">
