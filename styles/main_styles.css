@@ -418,7 +418,31 @@ section
 }
 
 
+@media all and (min-width: 800px) and (max-width: 1200px)
+{
 
+.top_bar_phone
+{
+	margin-top:10px;
+}
+
+.social_icon
+{
+	visibility: hidden;
+}
+
+.email
+{
+	visibility: hidden;
+}
+
+.top_bar_scholarship,.top_bar_summer_training,.top_bar_contact_us
+{
+	visibility: hidden;
+}
+
+
+}
 
 
 
