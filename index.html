@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Edusite</title>
+<title>Tech easy classes</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Unicat project">
+<meta name="description" content="Tech easy classes">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -13,15 +13,18 @@
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
-<link rel="stylesheet" type="text/css" href="css/typo.css">
 <link rel="stylesheet" type="text/css" href="styles/nav_bar.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles/Youtube_gallery.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+
+
+
+
 <!-- Favicon -->   
 <link href="images/Favicon.ico" rel="shortcut icon"/>
 
 <!-- naya -->
 
-<link rel="stylesheet" href="src/ALightBox.css">
 
 <style media="screen">
 	.t img {
@@ -95,14 +98,14 @@
 <style>
 
 
-.jssorl-009-spin img {
-            animation-name: jssorl-009-spin;
+.jssorl-009-snavn img {
+            animation-name: jssorl-009-snavn;
             animation-duration: 1.6s;
             animation-iteration-count: infinite;
 			animation-timing-function: linear;
 }
 
-@keyframes jssorl-009-spin {
+@keyframes jssorl-009-snavn {
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
 }
@@ -122,216 +125,6 @@
 .jssora051.jssora051dn {opacity:.5;}
 .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
 
-
-</style>
-
-<style>
-/*
-header { width: 100%; }
-
-.nav-bar { display: none; }
-
-header nav {
-  background: white;
-  z-index: 1000;
-  width: 100%;
-  margin: auto;
-}
-
-header nav ul { 
-	text-align: center;
-}
-
-header nav ul li {
-  display: inline-block;
-  position: relative;
-  padding-left: 10px;
-}
-
-header nav:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-header nav ul li a {
-  color: black;
-  display: block;
-  
-  text-decoration: none;
-  font-size: 14px;
-  font-family: tahoma;
-}
-
-/* header nav ul li a:hover { color: rgb(125, 125, 240) } 
-header nav ul li:hover { background: rgb(204, 191, 191); }
-
-header nav ul li:hover i { color: rgb(125, 125, 240); } 
-
-header nav ul li i { margin-right: 10px; }
-
-header nav ul li:hover .children { display: block; } 
-
-header nav ul li .children {
-  display: none;
-  background: white;
-  position: absolute;
-  width: 130%;
-  z-index: 1000;
-}
-
-header nav ul li .children span { display: none; }
-
-header nav ul li .children li {
-  display: block;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #30222299;
-}
-
-header nav ul li .children li a { margin-left: 0px; }
-
-header nav ul li .fa-angle-down {
-  position: relative;
-  top: 3px;
-}
-
-.nav-bar-2-ul
-{
-	padding-top: 25px;
-}
-
-@media all and (max-width: 800px) {
-
-
-body { padding-top: 80px; }
-
-
-.nav-bar-2-ul 
-{
-	margin-top: 100px;
-}
-
-header nav ul { 
-	text-align: left;
-}
-
-header nav ul li {
-  display: inline-block;
-  position: relative;
-  
-}
-
-.logo-img
-{
-	visibility: hidden;
-}
-
-.logo-img-li{
-	visibility: hidden;
-}
-
-.nav-bar-2-ul > li
-{
-	top:-100px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-
-}
-
-
-
-.top_bar
-{
-	visibility:hidden;
-}
-
-.top_bar1
-{
-	visibility:visible;
-	top: 0px;
-}
-
-.nav-bar-2{
-	overflow-y: scroll;
-	width:100%;
-	height: 60%;
-	margin-top:5px;
-}
-
-.nav-bar {
-  display: block;
-  width: 100%;
-  position: fixed;
-  top: 50px;
-  background: white;
-}
-
-.nav-bar span {
-  float: left;
-  font-size: 20px;
-  padding: 20px;
-  color: #fff;
-}
-
-.nav-bar .fa-bars {
-  display: block;
-  padding: 20px;
-  color: #fff;
-  overflow: hidden;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  float: right;
-}
-
-header nav {
-  width: 80%;
-  height: auto;
-  position: fixed;
-  right: 100%;
-  top : 63px;
-  overflow: hidden;
-  height: 100%;
-}
-
-header nav ul li {
-  display: block;
-  border-bottom: 1px solid black;
-  width: 100%;
-}
-
-header ul li a { display: block; }
-
-header nav ul li .children {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  display: none;
-}
-
-header nav ul li:hover .children { display: none; }
-
-header nav ul li ul li:first-child { border-top: 1px solid #ffffff99; }
-
-header nav ul li .children span {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-header nav ul li .children a {
-  margin-left: 10px;
-  padding: 5px 0;
-}
-
-header nav ul li .fa-angle-down {
-  position: relative;
-  top: 3px;
-}
-}
-
-*/
 
 </style>
 
@@ -386,18 +179,18 @@ header nav ul li .fa-angle-down {
 									<ul class="top_bar_contact_list">
 										<li class="top_bar_phone" style="margin-left:40px;">
 											<i class="fa fa-phone" aria-hidden="true"></i>
-											<div>79xxxxxx90</div>
+											<div>+91 9166263161</div>
 										</li>
 										<li class="email" >
 											<i class="fa fa-envelope-o" aria-hidden="true"></i>
-											<div>email@gmail.com</div>
+											<div><a href="mailto:me@company.com?subject=Hello&body=We+want+to+hire+you" style="color:white;">techeasyclasses@gmail.com</a></div>
 										</li>
 										<li class="top_bar_scholarship"><a href="scholarship.html" class="top_bar_content" style="color:white;font-weight: 600;"><img src="images/new.gif" alt="new" >Scholarship</a></li>
 										<li class="top_bar_summer_training"><a href="scholarship.html" class="top_bar_content" style="color:white;font-weight: 600;"><img src="images/new.gif" alt="new" >Summer Training</a></li>
-										<li class="top_bar_contact_us"><a href="scholarship.html" class="top_bar_content" style="color:white;font-weight: 600;">Contact Us</a></li>
+										<li class="top_bar_contact_us"><a href="contact us.html" class="top_bar_content" style="color:white;font-weight: 600;">Contact Us</a></li>
 									</ul>
 									<div class="top_bar_login" style="left: 2%;">
-										<div class="login_button"><a href="#">Register or Login</a></div>
+										<div class="login_button"><a href="login.html">Register or Login</a></div>
 									</div>
 									<div class="social_icon" style="left:100px;">
 										<ul class="social_icon_list">
@@ -420,27 +213,27 @@ header nav ul li .fa-angle-down {
 		
 				<!-- naya -->
 				
-				  <header >
-					<div id="navbar2" class="pi-header-sticky">
+			<header >
+					<div id="navbar2" class="nav-header-sticky">
 								<!-- Header row -->
-								<div class="pi-section-w pi-section-white pi-shadow-bottom pi-row-reducible">
-								<div class="pi-section pi-row-lg">
+								<div class="nav-section-w nav-section-white nav-shadow-bottom nav-row-reducible">
+								<div class="nav-section nav-row-lg">
 								
 								<!-- Logo -->
-								<div class="pi-row-block pi-row-block-logo"><a href="#"><img src="images/logo.png" style="margin-top:0px;" draggable="false"></a></div>
+								<div class="nav-row-block nav-row-block-logo"><a href="#"><img src="images/logo.png" style="margin-top:0px;" draggable="false"></a></div>
 								<!-- End logo -->
 								
 								<!-- Menu -->
-								<div class="pi-row-block pi-pull-right">
-								<ul class="pi-simple-menu pi-has-hover-border pi-full-height pi-hidden-sm">
+								<div class="nav-row-block nav-pull-right">
+								<ul class="nav-simple-menu nav-has-hover-border nav-full-height nav-hidden-sm">
 								<li class="active"><a href="#"><span>Home</span></a></li>
 								<li><a href="#"><span>About Us</span></a></li>
 								
-								<li class="pi-has-dropdown"><a href="#"><span>Services</span></a>
-									<ul class="pi-submenu pi-has-border pi-items-have-borders pi-has-shadow pi-submenu-dark">
-										<li class="pi-has-dropdown"><a href="#"><span>Traning</span></a>
-											<ul class="pi-submenu">
-											<li><a href="#"><span>Something</span></a></li>
+								<li class="nav-has-dropdown "><a href="#" ><span class="ms-icon-right">Services</span></a>
+									<ul class="nav-submenu nav-has-border nav-items-have-borders nav-has-shadow nav-submenu-dark">
+										<li class="nav-has-dropdown"><a href="#"><span>Traning</span></a>
+											<ul class="nav-submenu">
+											<li><a href="#"><span>Civil CAD</span></a></li>
 											<li><a href="#"><span>CS / IT</span></a></li>
 											<li><a href="#"><span>EC / Electrical</span></a></li>
 											<li><a href="#"><span>Fashion</span></a></li>
@@ -458,165 +251,161 @@ header nav ul li .fa-angle-down {
 								</li>
 								
 								
-								<li class="pi-has-dropdown pi-has-dropdown-wide"><a href="#"><span>Software</span></a>
-								<div class="pi-submenu-wide pi-submenu-wide-dark pi-has-border" style="box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
-								<div class="pi-section pi-section-dark pi-no-padding pi-clearfix">
-								<div class="pi-bordered">
-									<div class="pi-col pi-col-sm-4 pi-padding-top-15 pi-no-padding-bottom">
-									<div class="pi-col-md-6"><img src="images/animation-icon.png" draggable="false" class="img img-responsive"></div>
-									<div class="pi-col-md-6"><a href="#" class="pi-center"><h5>Something</h5></a></div>
+								<li class="nav-has-dropdown nav-has-dropdown-wide"><a href="#"><span>Software</span></a>
+								<div class="nav-submenu-wide nav-submenu-wide-dark nav-has-border" style="box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
+								<div class="nav-section nav-section-dark nav-no-padding nav-clearfix">
+
+								<div class="nav-bordered">
+									<div class="nav-col nav-col-sm-4 nav-padding-top-15 nav-no-padding-bottom">
+									<div class="nav-col-md-6"><img src="images/cartoon_img2.svg" draggable="false" class="img img-responsive"></div>
+									<div class="nav-col-md-6"><a href="#" class="nav-center"><h5>Civil CAD</h5></a></div>
 									</div>
 									
-									<div class="pi-col pi-col-sm-4 pi-padding-top-15 pi-no-padding-bottom">
-									<div class="pi-col-md-6"><img src="images/animation-icon.png" draggable="false" class="img img-responsive"><br></div>
-									<div class="pi-col-md-6"><a href="#" class="pi-center"><h5>Mechanical</h5></a></div>
+									<div class="nav-col nav-col-sm-4 nav-padding-top-15 nav-no-padding-bottom">
+									<div class="nav-col-md-6"><img src="images/cartoon_img2.svg" draggable="false" class="img img-responsive"><br></div>
+									<div class="nav-col-md-6"><a href="#" class="nav-center"><h5>Mechanical</h5></a></div>
 									</div>
 									
-									<div class="pi-col pi-col-sm-4 pi-padding-top-15 pi-no-padding-bottom">
-									<div class="pi-col-md-6"><img src="images/animation-icon.png" draggable="false" class="img img-responsive"></div>
-									<div class="pi-col-md-6"><a href="#" class="pi-center"><h5>Interior Design</h5></a></div>
+									<div class="nav-col nav-col-sm-4 nav-padding-top-15 nav-no-padding-bottom">
+									<div class="nav-col-md-6"><img src="images/cartoon_img2.svg" draggable="false" class="img img-responsive"></div>
+									<div class="nav-col-md-6"><a href="#" class="nav-center"><h5>Interior Design</h5></a></div>
 									</div>
 								
 								</div>
 								
-								<div class="pi-bordered">
+								<div class="nav-bordered">
 								
-									<div class="pi-col pi-col-sm-4 pi-padding-top-15 pi-no-padding-bottom">
-									<div class="pi-col-md-6"><img src="images/animation-icon.png" draggable="false" class="img img-responsive"></div>
-									<div class="pi-col-md-6"><a href="#" class="pi-center"><h5>Architecture</h5></a></div>
+									<div class="nav-col nav-col-sm-4 nav-padding-top-15 nav-no-padding-bottom">
+									<div class="nav-col-md-6"><img src="images/cartoon_img2.svg" draggable="false" class="img img-responsive"></div>
+									<div class="nav-col-md-6"><a href="#" class="nav-center"><h5>Architecture</h5></a></div>
 									</div>
 									
-									<div class="pi-col pi-col-sm-4 pi-padding-top-15 pi-no-padding-bottom">
-									<div class="pi-col-md-6"><img src="images/animation-icon.png" draggable="false" class="img img-responsive"></div>
-									<div class="pi-col-md-6"><a href="#" class="pi-center"><h5>Animation</h5></a></div>
+									<div class="nav-col nav-col-sm-4 nav-padding-top-15 nav-no-padding-bottom">
+									<div class="nav-col-md-6"><img src="images/cartoon_img2.svg" draggable="false" class="img img-responsive"></div>
+									<div class="nav-col-md-6"><a href="#" class="nav-center"><h5>Animation</h5></a></div>
 									</div>
 									
-									<div class="pi-col pi-col-sm-4 pi-padding-top-15 pi-no-padding-bottom">
-									<div class="pi-col-md-6"><img src="images/animation-icon.png" draggable="false" class="img img-responsive"></div>
-									<div class="pi-col-md-6"><a href="#" class="pi-center"><h5>Fashion</h5></a></div>
-									</div>
-								
-								</div>
-								
-								
-								<div class="pi-bordered">
-								
-									<div class="pi-col pi-col-sm-4 pi-padding-top-15 pi-no-padding-bottom">
-									<div class="pi-col-md-6"><img src="images/animation-icon.png" draggable="false" class="img img-responsive"></div>
-									<div class="pi-col-md-6"><a href="#" class="pi-center"><h5>CS-IT</h5></a></div>
-									</div>
-									
-									<div class="pi-col pi-col-sm-4 pi-padding-top-15 pi-no-padding-bottom">
-									<div class="pi-col-md-6"><img src="images/animation-icon.png" draggable="false" class="img img-responsive"></div>
-									<div class="pi-col-md-6"><a href="#" class="pi-center"><h5>Accounts</h5></a></div>
-									</div>
-									
-									<div class="pi-col pi-col-sm-4 pi-padding-top-15 pi-no-padding-bottom">
-									<div class="pi-col-md-6"><img src="images/animation-icon.png" draggable="false" class="img img-responsive"></div>
-									<div class="pi-col-md-6"><a href="#" class="pi-center"><h5>EC / Electrical</h5></a></div>
+									<div class="nav-col nav-col-sm-4 nav-padding-top-15 nav-no-padding-bottom">
+									<div class="nav-col-md-6"><img src="images/cartoon_img2.svg" draggable="false" class="img img-responsive"></div>
+									<div class="nav-col-md-6"><a href="#" class="nav-center"><h5>Fashion</h5></a></div>
 									</div>
 								
 								</div>
 								
 								
-								</div>
-								</div>
-								</li>
+								<div class="nav-bordered">
 								
-								<li class="pi-has-dropdown pi-has-dropdown-wide"><a href="#"><span>Career Courses</span></a>
-								<div class="pi-submenu-wide pi-submenu-wide-dark pi-has-border" style="box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
-								<div class="pi-section pi-section-dark pi-no-padding pi-clearfix">
-								
-								<div class="pi-bordered">
-								
-									<div class="pi-col pi-col-sm-4 pi-padding-top-15 pi-no-padding-bottom">
-									<div class="pi-col-md-6"><img src="images/animation-icon.png" draggable="false" class="img img-responsive"></div>
-									<div class="pi-col-md-6"><a href="#" class="pi-center"><h5>Hardware Networking</h5></a></div>
+									<div class="nav-col nav-col-sm-4 nav-padding-top-15 nav-no-padding-bottom">
+									<div class="nav-col-md-6"><img src="images/cartoon_img2.svg" draggable="false" class="img img-responsive"></div>
+									<div class="nav-col-md-6"><a href="#" class="nav-center"><h5>CS-IT</h5></a></div>
 									</div>
 									
-									<div class="pi-col pi-col-sm-4 pi-padding-top-15 pi-no-padding-bottom">
-									<div class="pi-col-md-6"><img src="images/animation-icon.png" draggable="false" class="img img-responsive"><br></div>
-									<div class="pi-col-md-6"><a href="#" class="pi-center"><h5>Web Design &amp; Devlopment</h5></a></div>
+									<div class="nav-col nav-col-sm-4 nav-padding-top-15 nav-no-padding-bottom">
+									<div class="nav-col-md-6"><img src="images/cartoon_img2.svg" draggable="false" class="img img-responsive"></div>
+									<div class="nav-col-md-6"><a href="#" class="nav-center"><h5>Accounts</h5></a></div>
 									</div>
 									
-									<div class="pi-col pi-col-sm-4 pi-padding-top-15 pi-no-padding-bottom">
-									<div class="pi-col-md-6"><img src="images/animation-icon.png" draggable="false" class="img img-responsive"></div>
-									<div class="pi-col-md-6"><a href="#" class="pi-center"><h5>Digital Marketing<br></h5></a></div>
+									<div class="nav-col nav-col-sm-4 nav-padding-top-15 nav-no-padding-bottom">
+									<div class="nav-col-md-6"><img src="images/cartoon_img2.svg" draggable="false" class="img img-responsive"></div>
+									<div class="nav-col-md-6"><a href="#" class="nav-center"><h5>EC / Electrical</h5></a></div>
 									</div>
 								
-								</div>
-								
-								<div class="pi-bordered">
-								
-									<div class="pi-col pi-col-sm-4 pi-padding-top-15 pi-no-padding-bottom">
-									<div class="pi-col-md-6"><img src="images/animation-icon.png" draggable="false" class="img img-responsive"></div>
-									<div class="pi-col-md-6"><a href="#" class="pi-center"><h5>SEO, SMO</h5></a></div>
-									</div>
-									
-									<div class="pi-col pi-col-sm-4 pi-padding-top-15 pi-no-padding-bottom">
-									<div class="pi-col-md-6"><img src="images/animation-icon.png" draggable="false" class="img img-responsive"></div>
-									<div class="pi-col-md-6"><a href="#" class="pi-center"><h5>Interior Design</h5></a></div>
-									</div>
-									
-									<div class="pi-col pi-col-sm-4 pi-padding-top-15 pi-no-padding-bottom">
-									<div class="pi-col-md-6"><img src="images/animation-icon.png" draggable="false" class="img img-responsive"></div>
-									<div class="pi-col-md-6"><a href="#" class="pi-center"><h5>Fashion Designing</h5></a></div>
-									</div>
-								
-								</div>
-								
-								
-								<div class="pi-bordered">
-								
-									<div class="pi-col pi-col-sm-4 pi-padding-top-15 pi-no-padding-bottom">
-									<div class="pi-col-md-6"><img src="images/animation-icon.png" draggable="false" class="img img-responsive"></div>
-									<div class="pi-col-md-6"><a href="#" class="pi-center"><h5>Graphic &amp; Animation Design</h5></a></div>
-									</div>
-									
-									<div class="pi-col pi-col-sm-4 pi-padding-top-15 pi-no-padding-bottom">
-									<div class="pi-col-md-6"><img src="images/animation-icon.png" draggable="false" class="img img-responsive"></div>
-									<div class="pi-col-md-6"><a href="#" class="pi-center"><h5>Jewellery Designing<br><br></h5></a></div>
-									</div>
-									
-									<div class="pi-col pi-col-sm-4 pi-padding-top-15 pi-no-padding-bottom">
-									<div class="pi-col-md-6"><img src="images/animation-icon.png" draggable="false" class="img img-responsive"></div>
-									<div class="pi-col-md-6"><a href="#" class="pi-center"><h5>Event Management<br><br></h5></a></div>
-									</div>
-								</div>
-								
-								
-								<div class="pi-bordered">
-								
-									<div class="pi-col pi-col-sm-4 pi-padding-top-15 pi-no-padding-bottom">
-									<div class="pi-col-md-6"><img src="images/animation-icon.png" draggable="false" class="img img-responsive"></div>
-									<div class="pi-col-md-6"><a href="#" class="pi-center"><h5>Mass &amp; Media Comunication</h5></a></div>
-									</div>
-									
-									<div class="pi-col pi-col-sm-4 pi-padding-top-15 pi-no-padding-bottom">
-									<div class="pi-col-md-6"><img src="images/animation-icon.png" draggable="false" class="img img-responsive"></div>
-									<div class="pi-col-md-6"><a href="accounting_courses.php" class="pi-center"><h5>Accounting</h5></a></div>
-									</div>
-									
-									<div class="pi-col pi-col-sm-4 pi-padding-top-15 pi-no-padding-bottom">
-									<div class="pi-col-md-6"><img src="images/animation-icon.png" draggable="false" class="img img-responsive"></div>
-									<div class="pi-col-md-6"><a href="#" class="pi-center"><h5>Computer Course</h5></a></div>
-									</div>
-									
-									<div class="pi-col pi-col-sm-4 pi-padding-top-15 pi-no-padding-bottom">
-									<div class="pi-col-md-6"><img src="images/animation-icon.png" draggable="false" class="img img-responsive"></div>
-									<div class="pi-col-md-6"><a href="#" class="pi-center"><h5>Cyber Security</h5></a></div>
-									</div>
 								</div>
 								
 								</div>
 								</div>
 								</li>
 								
+							
+								<li class="nav-has-dropdown nav-has-dropdown-wide"><a href="#"><span>Career Courses</span></a>
+									<div class="nav-submenu-wide nav-submenu-wide-dark nav-has-border" style="box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
+									<div class="nav-section nav-section-dark nav-no-padding nav-clearfix">
+	
+									<div class="nav-bordered">
+										<div class="nav-col nav-col-sm-4 nav-padding-top-15 nav-no-padding-bottom">
+										<div class="nav-col-md-6"><img src="images/cartoon_img2.svg" draggable="false" class="img img-responsive"></div>
+										<div class="nav-col-md-6"><a href="#" class="nav-center"><h5>Civil CAD</h5></a></div>
+										</div>
+										
+										<div class="nav-col nav-col-sm-4 nav-padding-top-15 nav-no-padding-bottom">
+										<div class="nav-col-md-6"><img src="images/cartoon_img2.svg" draggable="false" class="img img-responsive"><br></div>
+										<div class="nav-col-md-6"><a href="#" class="nav-center"><h5>Mechanical</h5></a></div>
+										</div>
+										
+										<div class="nav-col nav-col-sm-4 nav-padding-top-15 nav-no-padding-bottom">
+										<div class="nav-col-md-6"><img src="images/cartoon_img2.svg" draggable="false" class="img img-responsive"></div>
+										<div class="nav-col-md-6"><a href="#" class="nav-center"><h5>Interior Design</h5></a></div>
+										</div>
+									
+									</div>
+									
+									<div class="nav-bordered">
+									
+										<div class="nav-col nav-col-sm-4 nav-padding-top-15 nav-no-padding-bottom">
+										<div class="nav-col-md-6"><img src="images/cartoon_img2.svg" draggable="false" class="img img-responsive"></div>
+										<div class="nav-col-md-6"><a href="#" class="nav-center"><h5>Architecture</h5></a></div>
+										</div>
+										
+										<div class="nav-col nav-col-sm-4 nav-padding-top-15 nav-no-padding-bottom">
+										<div class="nav-col-md-6"><img src="images/cartoon_img2.svg" draggable="false" class="img img-responsive"></div>
+										<div class="nav-col-md-6"><a href="#" class="nav-center"><h5>Animation</h5></a></div>
+										</div>
+										
+										<div class="nav-col nav-col-sm-4 nav-padding-top-15 nav-no-padding-bottom">
+										<div class="nav-col-md-6"><img src="images/cartoon_img2.svg" draggable="false" class="img img-responsive"></div>
+										<div class="nav-col-md-6"><a href="#" class="nav-center"><h5>Fashion</h5></a></div>
+										</div>
+									
+									</div>
+									
+									
+									<div class="nav-bordered">
+									
+										<div class="nav-col nav-col-sm-4 nav-padding-top-15 nav-no-padding-bottom">
+										<div class="nav-col-md-6"><img src="images/cartoon_img2.svg" draggable="false" class="img img-responsive"></div>
+										<div class="nav-col-md-6"><a href="#" class="nav-center"><h5>CS-IT</h5></a></div>
+										</div>
+										
+										<div class="nav-col nav-col-sm-4 nav-padding-top-15 nav-no-padding-bottom">
+										<div class="nav-col-md-6"><img src="images/cartoon_img2.svg" draggable="false" class="img img-responsive"></div>
+										<div class="nav-col-md-6"><a href="#" class="nav-center"><h5>Accounts</h5></a></div>
+										</div>
+										
+										<div class="nav-col nav-col-sm-4 nav-padding-top-15 nav-no-padding-bottom">
+										<div class="nav-col-md-6"><img src="images/cartoon_img2.svg" draggable="false" class="img img-responsive"></div>
+										<div class="nav-col-md-6"><a href="#" class="nav-center"><h5>EC / Electrical</h5></a></div>
+										</div>
+									
+									</div>
+
+									<div class="nav-bordered">
+								
+											<div class="nav-col nav-col-sm-4 nav-padding-top-15 nav-no-padding-bottom">
+											<div class="nav-col-md-6"><img src="images/cartoon_img2.svg" draggable="false" class="img img-responsive"></div>
+											<div class="nav-col-md-6"><a href="#" class="nav-center"><h5>Mass &amp; Media Comunication</h5></a></div>
+											</div>
+											
+											<div class="nav-col nav-col-sm-4 nav-padding-top-15 nav-no-padding-bottom">
+											<div class="nav-col-md-6"><img src="images/cartoon_img2.svg" draggable="false" class="img img-responsive"></div>
+											<div class="nav-col-md-6"><a href="accounting_courses.php" class="nav-center"><h5>Accounting</h5></a></div>
+											</div>
+											
+											<div class="nav-col nav-col-sm-4 nav-padding-top-15 nav-no-padding-bottom">
+											<div class="nav-col-md-6"><img src="images/cartoon_img2.svg" draggable="false" class="img img-responsive"></div>
+											<div class="nav-col-md-6"><a href="#" class="nav-center"><h5>Computer Course</h5></a></div>
+											</div>
+											
+									</div> 
+									
+									</div>
+									</div>
+									</li>
 								
 								
 								
-								<li class="pi-has-dropdown"><a href="#"><span>Placement</span></a>
-									<ul class="pi-submenu pi-has-border pi-items-have-borders pi-has-shadow pi-submenu-dark">
+								
+								<li class="nav-has-dropdown"><a href="#"><span>Placement</span></a>
+									<ul class="nav-submenu nav-has-border nav-items-have-borders nav-has-shadow nav-submenu-dark">
 									<li><a href="#"><span>Information</span></a></li>
 									<li><a href="#"><span>Placements</span></a></li>
 									<li><a href="#"><span>Placements Form</span></a></li>
@@ -625,8 +414,8 @@ header nav ul li .fa-angle-down {
 								
 								<li><a href="#"><span>Network</span></a></li>
 								
-								<li class="pi-has-dropdown"><a href="#"><span>Registration</span></a>
-									<ul class="pi-submenu pi-has-border pi-items-have-borders pi-has-shadow pi-submenu-dark">
+								<li class="nav-has-dropdown"><a href="#"><span>Registration</span></a>
+									<ul class="nav-submenu nav-has-border nav-items-have-borders nav-has-shadow nav-submenu-dark">
 									<li><a href="#"><span>Franchis</span></a></li>
 									<li><a href="#"><span>Student</span></a></li>
 									</ul>
@@ -639,19 +428,19 @@ header nav ul li .fa-angle-down {
 								<!-- End menu -->
 								
 								<!-- Mobile menu button -->
-								<div id="menu-button" class="pi-row-block pi-pull-right pi-hidden-lg-only pi-hidden-md-only">
-								<button class="btn pi-btn pi-mobile-menu-toggler" data-target="#pi-main-mobile-menu">
-								<i class="icon-menu pi-text-center"></i>
+								<div id="menu-button" class="nav-row-block nav-pull-right nav-hidden-lg-only nav-hidden-md-only">
+								<button class="btn nav-btn nav-mobile-menu-toggler" data-target="#nav-main-mobile-menu">
+								<i class="icon-menu nav-text-center"></i>
 								</button>
 								</div>
 								<!-- End mobile menu button -->
 								
 								
 								<!-- Mobile menu -->
-								<div id="pi-main-mobile-menu" class="pi-section-menu-mobile-w pi-section-dark">
-								<div class="pi-section-menu-mobile">
+								<div id="nav-main-mobile-menu" class="nav-section-menu-mobile-w nav-section-dark" style="overflow:scroll;">
+								<div class="nav-section-menu-mobile">
 								
-								<ul class="pi-menu-mobile pi-items-have-borders pi-menu-mobile-dark">
+								<ul class="nav-menu-mobile nav-items-have-borders nav-menu-mobile-dark">
 								
 								<li class="active"><a href="#"><span>Home</span></a></li>
 								
@@ -661,7 +450,7 @@ header nav ul li .fa-angle-down {
 									<ul style="height: 0px;">
 									<li><a href="#"><span>Traning</span></a>
 										<ul style="height: 0px;">
-										<li><a href="#"><span> Something</span></a></li>
+										<li><a href="#"><span> Civil CAD</span></a></li>
 										<li><a href="#"><span>CS / IT</span></a></li>
 										<li><a href="#"><span>EC / Electrical</span></a></li>
 										<li><a href="#"><span>Fashion</span></a></li>
@@ -680,15 +469,15 @@ header nav ul li .fa-angle-down {
 													
 								<li><a href=""><span>Software</span></a>
 									<ul style="height: 0px;">
-									<li><a href="#"><img src="CAD%20TRAINING%20%20%20AutoCAD_files/civil-icon_002.png" width="50"> Something</a></li>
-									<li><a href="#"><img src="CAD%20TRAINING%20%20%20AutoCAD_files/mechanical-icon_002.png" width="50"> Mechanical</a></li>
-									<li><a href="#"><img src="CAD%20TRAINING%20%20%20AutoCAD_files/interior-design_002.png" width="50"> Interior Design</a></li>
-									<li><a href="#"><img src="CAD%20TRAINING%20%20%20AutoCAD_files/architecture_icon_002.png" width="50"> Architecture</a></li>
-									<li><a href="#"><img src="CAD%20TRAINING%20%20%20AutoCAD_files/animation-icon_002.png" width="50"> Animation</a></li>
-									<li><a href="#"><img src="CAD%20TRAINING%20%20%20AutoCAD_files/fashion-icon_002.png" width="50"> Fashion</a></li>
-									<li><a href="#"><img src="CAD%20TRAINING%20%20%20AutoCAD_files/computer-icon.png" width="50"> CS-IT</a></li>
-									<li><a href="#"><img src="CAD%20TRAINING%20%20%20AutoCAD_files/digital-marketing.htm" width="50"> Digital Marketing</a></li>
-									<li><a href="#"><img src="CAD%20TRAINING%20%20%20AutoCAD_files/electrical-icon_002.png" width="50"> EC / Electrical</a></li>
+									<li><a href="#"><img src="images/cartoon_img2.svg" width="50"> Civil CAD</a></li>
+									<li><a href="#"><img src="images/mechanical-icon_002.png" width="50"> Mechanical</a></li>
+									<li><a href="#"><img src="images/interior-design_002.png" width="50"> Interior Design</a></li>
+									<li><a href="#"><img src="images/architecture_icon_002.png" width="50"> Architecture</a></li>
+									<li><a href="#"><img src="images/animation-icon_002.png" width="50"> Animation</a></li>
+									<li><a href="#"><img src="images/fashion-icon_002.png" width="50"> Fashion</a></li>
+									<li><a href="#"><img src="images/computer-icon.png" width="50"> CS-IT</a></li>
+									<li><a href="#"><img src="images/digital-marketing.htm" width="50"> Digital Marketing</a></li>
+									<li><a href="#"><img src="images/electrical-icon_002.png" width="50"> EC / Electrical</a></li>
 									</ul>
 								</li>
 								
@@ -697,18 +486,18 @@ header nav ul li .fa-angle-down {
 								
 								<li><a href="#"><span>Career Courses</span></a>
 									<ul style="height: 0px;">
-									<li><a href="#"><img src="CAD%20TRAINING%20%20%20AutoCAD_files/hardware1.png" width="50"> Hardware Networking</a></li>
-									<li><a href="#"><img src="CAD%20TRAINING%20%20%20AutoCAD_files/web-design.png" width="50">Web Design &amp; Devlopment</a></li>
-									<li><a href="#"><img src="CAD%20TRAINING%20%20%20AutoCAD_files/digital-marketing1.png" width="50">Digital Marketing<br></a></li>
-									<li><a href="#"><img src="CAD%20TRAINING%20%20%20AutoCAD_files/seo.png" width="50">SEO, SMO</a></li>
-									<li><a href="#"><img src="CAD%20TRAINING%20%20%20AutoCAD_files/int-design.png" width="50">Interior Design</a></li>
-									<li><a href="#"><img src="CAD%20TRAINING%20%20%20AutoCAD_files/fdesign.png" width="50">Fashion Designing</a></li>
-									<li><a href="#"><img src="CAD%20TRAINING%20%20%20AutoCAD_files/animation-design.png" width="50">Graphic &amp; Animation Design</a></li>
-									<li><a href="#"><img src="CAD%20TRAINING%20%20%20AutoCAD_files/jewellery-icon.png" width="50">Jewellery Designing</a></li>
-									<li><a href="#"><img src="CAD%20TRAINING%20%20%20AutoCAD_files/event-management.png" width="50">Event Management</a></li>
-									<li><a href="#"><img src="CAD%20TRAINING%20%20%20AutoCAD_files/media-mass.png" width="50">Mass &amp; Media Comunication</a></li>
-									<li><a href="#"><img src="CAD%20TRAINING%20%20%20AutoCAD_files/computer-courses.png" width="50">Computer Course</a></li>   
-									<li><a href="#"><img src="CAD%20TRAINING%20%20%20AutoCAD_files/cyber-sec.png" width="50">Cyber Security</a></li>
+									<li><a href="#"><img src="images/hardware1.png" width="50"> Hardware Networking</a></li>
+									<li><a href="#"><img src="images/web-design.png" width="50">Web Design &amp; Devlopment</a></li>
+									<li><a href="#"><img src="images/digital-marketing1.png" width="50">Digital Marketing<br></a></li>
+									<li><a href="#"><img src="images/seo.png" width="50">SEO, SMO</a></li>
+									<li><a href="#"><img src="images/int-design.png" width="50">Interior Design</a></li>
+									<li><a href="#"><img src="images/fdesign.png" width="50">Fashion Designing</a></li>
+									<li><a href="#"><img src="images/animation-design.png" width="50">Graphic &amp; Animation Design</a></li>
+									<li><a href="#"><img src="images/jewellery-icon.png" width="50">Jewellery Designing</a></li>
+									<li><a href="#"><img src="images/event-management.png" width="50">Event Management</a></li>
+									<li><a href="#"><img src="images/media-mass.png" width="50">Mass &amp; Media Comunication</a></li>
+									<li><a href="#"><img src="images/computer-courses.png" width="50">Computer Course</a></li>   
+									<li><a href="#"><img src="images/cyber-sec.png" width="50">Cyber Security</a></li>
 									</ul>
 								</li>
 								
@@ -724,7 +513,7 @@ header nav ul li .fa-angle-down {
 								
 								<li><a href="#"><span>Network</span></a></li>
 								
-								<li><a href="#"><span>Contact Us</span></a></li>
+								<li><a href="contact us.html"><span>Contact Us</span></a></li>
 								
 								<li><a href=""><span>Registration</span></a>
 									<ul style="height: 0px;">
@@ -735,8 +524,8 @@ header nav ul li .fa-angle-down {
 								
 								<li><a href="#"><span>Login</span></a></li>
 								
-								<li><a href="#"><span><img src="CAD%20TRAINING%20%20%20AutoCAD_files/new.gif"> Scholarship</span></a></li>
-								<li><a href="#"><span><img src="CAD%20TRAINING%20%20%20AutoCAD_files/new.gif"> Summer Traning</span></a></li>
+								<li><a href="#"><span><img src="images/new.gif"> Scholarship</span></a></li>
+								<li><a href="#"><span><img src="images/new.gif"> Summer Traning</span></a></li>
 								
 								</ul>
 								
@@ -749,7 +538,7 @@ header nav ul li .fa-angle-down {
 								<!-- End header row -->
 				    </div>
 					
-		          </header>
+		    </header>
 	
 		<!-- naya end -->
 
@@ -783,7 +572,7 @@ header nav ul li .fa-angle-down {
 	<!-- Naya -->
 	<div id="jssor_1" style="position:relative;margin-top:90px;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
 			<!-- Loading Screen -->
-			<div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+			<div data-u="loading" class="jssorl-009-snavn" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
 				<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
 			</div>
 			<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
@@ -827,7 +616,7 @@ header nav ul li .fa-angle-down {
 				<div class="row">
 					<div class="col">
 						<div class="section_title_container text-center">
-							<h2 class="section_title"; style="color:black">Welcome to Edusite</h2>
+							<h2 class="section_title"; style="color:black">Welcome To Tech Easy Classes</h2>
 						</div>
 					</div>
 				</div>
@@ -950,7 +739,7 @@ header nav ul li .fa-angle-down {
 							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 feature_col">
 									<div class="feature text-center trans_400">
 										<div class="feature_icon"><img src="images/blueprint.png" alt=""></div>
-										<h3 class="feature_title">Something</h3><br><br>
+										<h3 class="feature_title">Civil Cad</h3><br><br>
 										<div class="feature_text"><p class="para_text" style="text-align:justify; word-spacing:-1px;"> we have worked out for the industries requirements, placements criteria and courses of engineering colleges.<br><a href="#" target="_blank" style="color:blue">More info ></a></p></div><br>
 									</div>
 							</div>
@@ -958,7 +747,7 @@ header nav ul li .fa-angle-down {
 							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 feature_col">
 									<div class="feature text-center trans_400">
 										<div class="feature_icon"><img src="images/blueprint.png" alt=""></div>
-										<h3 class="feature_title">Something</h3><br><br>
+										<h3 class="feature_title">Civil Cad</h3><br><br>
 										<div class="feature_text"><p class="para_text" style="text-align:justify; word-spacing:-1px;"> we have worked out for the industries requirements, placements criteria and courses of engineering colleges.<br><a href="#" target="_blank" style="color:blue">More info ></a></p></div><br>
 									</div>
 							</div>
@@ -966,7 +755,7 @@ header nav ul li .fa-angle-down {
 							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 feature_col">
 									<div class="feature text-center trans_400">
 										<div class="feature_icon"><img src="images/blueprint.png" alt=""></div>
-										<h3 class="feature_title">Something</h3><br><br>
+										<h3 class="feature_title">Civil Cad</h3><br><br>
 										<div class="feature_text"><p class="para_text" style="text-align:justify; word-spacing:-1px;"> we have worked out for the industries requirements, placements criteria and courses of engineering colleges.<br><a href="#" target="_blank" style="color:blue">More info ></a></p></div><br>
 									</div>
 							</div>
@@ -974,7 +763,7 @@ header nav ul li .fa-angle-down {
 							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 feature_col">
 									<div class="feature text-center trans_400">
 										<div class="feature_icon"><img src="images/blueprint.png" alt=""></div>
-										<h3 class="feature_title">Something</h3><br><br>
+										<h3 class="feature_title">Civil Cad</h3><br><br>
 										<div class="feature_text"><p class="para_text" style="text-align:justify; word-spacing:-1px;"> we have worked out for the industries requirements, placements criteria and courses of engineering colleges.<br><a href="#" target="_blank" style="color:blue">More info ></a></p></div><br>
 									</div>
 							</div>
@@ -983,7 +772,7 @@ header nav ul li .fa-angle-down {
 							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 feature_col">
 									<div class="feature text-center trans_400">
 										<div class="feature_icon"><img src="images/blueprint.png" alt=""></div>
-										<h3 class="feature_title">Something</h3><br><br>
+										<h3 class="feature_title">Civil Cad</h3><br><br>
 										<div class="feature_text"><p class="para_text" style="text-align:justify; word-spacing:-1px;"> we have worked out for the industries requirements, placements criteria and courses of engineering colleges.<br><a href="#" target="_blank" style="color:blue">More info ></a></p></div><br>
 									</div>
 							</div>
@@ -991,7 +780,7 @@ header nav ul li .fa-angle-down {
 							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 feature_col">
 									<div class="feature text-center trans_400">
 										<div class="feature_icon"><img src="images/blueprint.png" alt=""></div>
-										<h3 class="feature_title">Something</h3><br><br>
+										<h3 class="feature_title">Civil Cad</h3><br><br>
 										<div class="feature_text"><p class="para_text" style="text-align:justify; word-spacing:-1px;"> we have worked out for the industries requirements, placements criteria and courses of engineering colleges.<br><a href="#" target="_blank" style="color:blue">More info ></a></p></div><br>
 									</div>
 							</div>
@@ -1000,7 +789,7 @@ header nav ul li .fa-angle-down {
 							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 feature_col">
 									<div class="feature text-center trans_400">
 										<div class="feature_icon"><img src="images/blueprint.png" alt=""></div>
-										<h3 class="feature_title">Something</h3><br><br>
+										<h3 class="feature_title">Civil Cad</h3><br><br>
 										<div class="feature_text"><p class="para_text" style="text-align:justify; word-spacing:-1px;"> we have worked out for the industries requirements, placements criteria and courses of engineering colleges.<br><a href="#" target="_blank" style="color:blue">More info ></a></p></div><br>
 									</div>
 							</div>
@@ -1010,7 +799,7 @@ header nav ul li .fa-angle-down {
 							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 feature_col">
 									<div class="feature text-center trans_400">
 										<div class="feature_icon"><img src="images/blueprint.png" alt=""></div>
-										<h3 class="feature_title">Something</h3><br><br>
+										<h3 class="feature_title">Civil Cad</h3><br><br>
 										<div class="feature_text"><p class="para_text" style="text-align:justify; word-spacing:-1px;"> we have worked out for the industries requirements, placements criteria and courses of engineering colleges.<br><a href="#" target="_blank" style="color:blue">More info ></a></p></div><br>
 									</div>
 							</div>
@@ -1019,7 +808,7 @@ header nav ul li .fa-angle-down {
 							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 feature_col">
 									<div class="feature text-center trans_400">
 										<div class="feature_icon"><img src="images/blueprint.png" alt=""></div>
-										<h3 class="feature_title">Something</h3><br><br>
+										<h3 class="feature_title">Civil Cad</h3><br><br>
 										<div class="feature_text"><p class="para_text" style="text-align:justify; word-spacing:-1px;"> we have worked out for the industries requirements, placements criteria and courses of engineering colleges.<br><a href="#" target="_blank" style="color:blue">More info ></a></p></div><br>
 									</div>
 							</div>
@@ -1028,7 +817,7 @@ header nav ul li .fa-angle-down {
 							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 feature_col">
 									<div class="feature text-center trans_400">
 										<div class="feature_icon"><img src="images/blueprint.png" alt=""></div>
-										<h3 class="feature_title">Something</h3><br><br>
+										<h3 class="feature_title">Civil Cad</h3><br><br>
 										<div class="feature_text"><p class="para_text" style="text-align:justify; word-spacing:-1px;"> we have worked out for the industries requirements, placements criteria and courses of engineering colleges.<br><a href="#" target="_blank" style="color:blue">More info ></a></p></div><br>
 									</div>
 							</div>
@@ -1037,7 +826,7 @@ header nav ul li .fa-angle-down {
 							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 feature_col">
 									<div class="feature text-center trans_400">
 										<div class="feature_icon"><img src="images/blueprint.png" alt=""></div>
-										<h3 class="feature_title">Something</h3><br><br>
+										<h3 class="feature_title">Civil Cad</h3><br><br>
 										<div class="feature_text"><p class="para_text" style="text-align:justify; word-spacing:-1px;"> we have worked out for the industries requirements, placements criteria and courses of engineering colleges.<br><a href="#" target="_blank" style="color:blue">More info ></a></p></div><br>
 									</div>
 							</div>
@@ -1046,7 +835,7 @@ header nav ul li .fa-angle-down {
 							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 feature_col">
 									<div class="feature text-center trans_400">
 										<div class="feature_icon"><img src="images/blueprint.png" alt=""></div>
-										<h3 class="feature_title">Something</h3><br><br>
+										<h3 class="feature_title">Civil Cad</h3><br><br>
 										<div class="feature_text"><p class="para_text" style="text-align:justify; word-spacing:-1px;"> we have worked out for the industries requirements, placements criteria and courses of engineering colleges.<br><a href="#" target="_blank" style="color:blue">More info ></a></p></div><br>
 									</div>
 							</div>
@@ -1094,10 +883,10 @@ header nav ul li .fa-angle-down {
 	<div>
 		<div data-title="Landscape" class="t" style="color:rgb(238, 27, 66);margin-left: 80px;text-align: center; margin-bottom: 100px;margin-top: 70px;">
 		<h2 class="section_title"; style="color:black;text-align: center;">Video Gallery</h2><br><br>
-		<a class="alb_item" style="padding:10px;" href="https://www.youtube.com/watch?v=TW9d8vYrVFQ">Youtube 3</a>
-		<a class="alb_item" style="padding:10px;" href="https://www.youtube.com/watch?v=TW9d8vYrVFQ">Youtube 2</a>
-	  <a class="alb_item"  style="padding:10px;" href="https://www.youtube.com/watch?v=TW9d8vYrVFQ">Youtube 2</a>
-	  <a class="alb_item" style="padding:10px;" href="https://www.youtube.com/watch?v=TW9d8vYrVFQ">Youtube 3</a>
+		<a class="alb_item" style="margin:10px;" href="https://www.youtube.com/watch?v=JgUSaxc8dsA">Youtube 3</a>
+		<a class="alb_item" style="margin:10px;" href="https://www.youtube.com/watch?v=Ldtt_pdaXak">Youtube 2</a>
+	  <a class="alb_item"  style="margin:10px;" href="https://www.youtube.com/watch?v=Ldtt_pdaXak">Youtube 2</a>
+	  <a class="alb_item" style="margin:10px;" href="https://www.youtube.com/watch?v=JgUSaxc8dsA">Youtube 3</a>
 		</div>
 	</div>>
 	
@@ -1122,9 +911,9 @@ header nav ul li .fa-angle-down {
 												<div class="footer_title">Courses</div>
 												<div class="footer_contact_info">
 													<ul style="margin-top:-20px;">
-														<li><img src="images/greater.png" alt="">Something</li>
-														<li><img src="images/greater.png" alt="">Something</li>
-														<li><img src="images/greater.png" alt="">Something</li>
+														<li><img src="images/greater.png" alt="">Civil cad</li>
+														<li><img src="images/greater.png" alt="">Civil cad</li>
+														<li><img src="images/greater.png" alt="">Civil cad</li>
 													</ul>
 												</div>
 											</div>
@@ -1138,9 +927,9 @@ header nav ul li .fa-angle-down {
 										<div class="footer_title"></div>
 										<div class="footer_contact_info">
 											<ul>
-												<li><img src="images/greater.png" alt="">Something</li>
-												<li><img src="images/greater.png" alt="">Something</li>
-												<li><img src="images/greater.png" alt="">Something</li>
+												<li><img src="images/greater.png" alt="">Civil cad</li>
+												<li><img src="images/greater.png" alt="">Civil cad</li>
+												<li><img src="images/greater.png" alt="">Civil cad</li>
 											</ul>
 										</div>
 									</div>
@@ -1154,9 +943,9 @@ header nav ul li .fa-angle-down {
 											<div class="footer_title"></div>
 											<div class="footer_contact_info">
 												<ul>
-													<li><img src="images/greater.png" alt="">Something</li>
-													<li><img src="images/greater.png" alt="">Something</li>
-													<li><img src="images/greater.png" alt="">Something</li>
+													<li><img src="images/greater.png" alt="">Civil cad</li>
+													<li><img src="images/greater.png" alt="">Civil cad</li>
+													<li><img src="images/greater.png" alt="">Civil cad</li>
 												</ul>
 											</div>
 										</div>
@@ -1170,9 +959,9 @@ header nav ul li .fa-angle-down {
 											<div class="footer_title"></div>
 											<div class="footer_contact_info">
 												<ul>
-													<li><img src="images/greater.png" alt="">Something</li>
-													<li><img src="images/greater.png" alt="">Something</li>
-													<li><img src="images/greater.png" alt="">Something</li>
+													<li><img src="images/greater.png" alt="">Civil cad</li>
+													<li><img src="images/greater.png" alt="">Civil cad</li>
+													<li><img src="images/greater.png" alt="">Civil cad</li>
 												</ul>
 											</div>
 										</div>
@@ -1205,9 +994,9 @@ header nav ul li .fa-angle-down {
 												<div class="footer_title">Navigation</div>
 												<div class="footer_contact_info">
 													<ul>
-														<li><img src="images/greater.png" alt="">Something</li>
-														<li><img src="images/greater.png" alt="">Something</li>
-														<li><img src="images/greater.png" alt="">Something</li>
+														<li><img src="images/greater.png" alt="">Civil cad</li>
+														<li><img src="images/greater.png" alt="">Civil cad</li>
+														<li><img src="images/greater.png" alt="">Civil cad</li>
 													</ul>
 												</div>
 											</div>
@@ -1221,9 +1010,9 @@ header nav ul li .fa-angle-down {
 										<div class="footer_title">Placement</div>
 										<div class="footer_contact_info">
 											<ul>
-												<li><img src="images/greater.png" alt="">Something</li>
-												<li><img src="images/greater.png" alt="">Something</li>
-												<li><img src="images/greater.png" alt="">Something</li>
+												<li><img src="images/greater.png" alt="">Civil cad</li>
+												<li><img src="images/greater.png" alt="">Civil cad</li>
+												<li><img src="images/greater.png" alt="">Civil cad</li>
 											</ul>
 										</div>
 									</div>
@@ -1237,9 +1026,9 @@ header nav ul li .fa-angle-down {
 											<div class="footer_title">Services</div>
 											<div class="footer_contact_info">
 												<ul>
-													<li><img src="images/greater.png" alt="">Something</li>
-													<li><img src="images/greater.png" alt="">Something</li>
-													<li><img src="images/greater.png" alt="">Something</li>
+													<li><img src="images/greater.png" alt="">Civil cad</li>
+													<li><img src="images/greater.png" alt="">Civil cad</li>
+													<li><img src="images/greater.png" alt="">Civil cad</li>
 												</ul>
 											</div>
 										</div>
@@ -1252,7 +1041,7 @@ header nav ul li .fa-angle-down {
 										<div class="footer_section footer_mobile">
 											<div class="footer_title">MeetUs</div>
 											<div class="footer_mobile_content">
-												<div class="mapouter"><div class="gmap_canvas"><iframe width="257" height="292" id="gmap_canvas" src="https://maps.google.com/maps?q=Satellite%20Hospital%20Rd%2C%20Hiran%20Magri%2C%20Udaipur%2C%20Rajasthan%20313002&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de">webseite erstellen lassen</a></div><style>.mapouter{text-align:right;height:292px;width:257px;}.gmap_canvas {overflow:hidden;background:none!important;height:292px;width:257px;}</style></div></div>
+												<div class="mapouter"><div class="gmap_canvas"><iframe width="257" height="292" id="gmap_canvas" src="https://maps.google.com/maps?q=Satellite%20Hosnavtal%20Rd%2C%20Hiran%20Magri%2C%20Udaipur%2C%20Rajasthan%20313002&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de">webseite erstellen lassen</a></div><style>.mapouter{text-align:right;height:292px;width:257px;}.gmap_canvas {overflow:hidden;background:none!important;height:292px;width:257px;}</style></div></div>
 											</div>
 										
 								</div>
@@ -1282,7 +1071,7 @@ header nav ul li .fa-angle-down {
 									<div class="footer_section footer_about">
 										<div class="footer_logo_container">
 											<a href="#">
-												<div class="footer_logo_text">Ed<span>us</span>ite</div>
+												<div class="footer_logo_text">Tech<span>Easy</span>Classes</div>
 											</a>
 										</div>
 										<div class="footer_about_text">
@@ -1307,9 +1096,9 @@ header nav ul li .fa-angle-down {
 										<div class="footer_title">Contact Us</div>
 										<div class="footer_contact_info">
 											<ul>
-												<li>Email: email@gmail.com</li>
-												<li>Phone: 79xxxxxx90</li>
-												<li>Edusite</li>
+												<li>Email: techeasyclasses@gmail.com</li>
+												<li>Phone:   +91 9166263161</li>
+												<li>Tech Easy classes</li>
 											</ul>
 										</div>
 									</div>
@@ -1343,7 +1132,7 @@ header nav ul li .fa-angle-down {
 									<div class="footer_section footer_mobile">
 										<div class="footer_title">MeetUs</div>
 										<div class="footer_mobile_content">
-											<div class="mapouter"><div class="gmap_canvas"><iframe width="257" height="292" id="gmap_canvas" src="https://maps.google.com/maps?q=Satellite%20Hospital%20Rd%2C%20Hiran%20Magri%2C%20Udaipur%2C%20Rajasthan%20313002&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de">webseite erstellen lassen</a></div><style>.mapouter{text-align:right;height:292px;width:257px;}.gmap_canvas {overflow:hidden;background:none!important;height:292px;width:257px;}</style></div></div>
+											<div class="mapouter"><div class="gmap_canvas"><iframe width="257" height="292" id="gmap_canvas" src="https://maps.google.com/maps?q=Satellite%20Hosnavtal%20Rd%2C%20Hiran%20Magri%2C%20Udaipur%2C%20Rajasthan%20313002&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de">webseite erstellen lassen</a></div><style>.mapouter{text-align:right;height:292px;width:257px;}.gmap_canvas {overflow:hidden;background:none!important;height:292px;width:257px;}</style></div></div>
 									</div>
 									
 								</div>
@@ -1355,7 +1144,7 @@ header nav ul li .fa-angle-down {
 	
 			
 			</div>
-		</footer>
+	</footer>
 
 </div>
 
@@ -1415,7 +1204,7 @@ header nav ul li .fa-angle-down {
 
 <script>
 function showDiv() {
-   document.getElementById('pi-main-mobile-menu').style.display = "block";
+   document.getElementById('nav-main-mobile-menu').style.display = "block";
 }
 </script>
 
@@ -1465,8 +1254,8 @@ function scrollFunction() {
 <script src="plugins/easing/easing.js"></script>
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
 <script src="js/custom.js"></script>
-<script src="js/jquery-1.js"></script>
-<script src="js/pi_002.js"></script>
+<script src="js/index2.js"></script>
+<script src="js/index1.js"></script>
 
 </body>
 </html>

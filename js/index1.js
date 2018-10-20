@@ -1,6 +1,6 @@
 
 
-/*_____ scripts/pi.helpers.js*/
+/*_____ scripts/nav.helpers.js*/
 /* Aura version: 1.8.7 */
 
 //region getViewportSize
@@ -24,7 +24,7 @@ function fixIE8rgba() {
 
 	if(isOldIE() === 8){
 		var selectors = [
-				'.pi-tooltip'
+				'.nav-tooltip'
 			],
 			$elements = $(selectors.join(','));
 		$elements.each(function(){
@@ -106,10 +106,10 @@ function getElementHeight($el){
 }
 
 
-/*_____ scripts/pi.boundManager.js*/
+/*_____ scripts/nav.boundManager.js*/
 /* Aura version: 1.8.7 */
 
-var piBounds = {
+var navBounds = {
 	lg: 1140,
 	md: 992,
 	sm: 768,
@@ -124,34 +124,34 @@ jQuery(function($){
 		$d = $(document),
 		resizeTMT;
 
-	window.piViewportSize = window.getViewportSize();
-	window.piViewportWidth = window.piViewportSize.width;
-	window.piViewportHeight = window.piViewportSize.height;
-	window.piCurrentBound = piBounds[0];
+	window.navViewportSize = window.getViewportSize();
+	window.navViewportWidth = window.navViewportSize.width;
+	window.navViewportHeight = window.navViewportSize.height;
+	window.navCurrentBound = navBounds[0];
 
 	function checkBound(){
 
-		var previousBound = window.piCurrentBound;
+		var previousBound = window.navCurrentBound;
 
-		window.piViewportSize = window.getViewportSize();
-		window.piViewportWidth = window.piViewportSize.width;
-		window.piViewportHeight = window.piViewportSize.height;
+		window.navViewportSize = window.getViewportSize();
+		window.navViewportWidth = window.navViewportSize.width;
+		window.navViewportHeight = window.navViewportSize.height;
 
-		if(window.piViewportWidth >= piBounds.lg && window.piCurrentBound !== 'lg'){
-			window.piCurrentBound = 'lg';
-		} else if(window.piViewportWidth >= piBounds.md && window.piViewportWidth < piBounds.lg && window.piCurrentBound !== 'md') {
-			window.piCurrentBound = 'md';
-		} else if(window.piViewportWidth >= piBounds.sm && window.piViewportWidth < piBounds.md && window.piCurrentBound !== 'sm') {
-			window.piCurrentBound = 'sm';
-		} else if(window.piViewportWidth >= piBounds.xs && window.piViewportWidth < piBounds.sm && window.piCurrentBound !== 'xs') {
-			window.piCurrentBound = 'xs';
-		} else if(window.piViewportWidth >= piBounds.xs2 && window.piViewportWidth < piBounds.xs && window.piCurrentBound !== '2xs') {
-			window.piCurrentBound = '2xs';
-		} else if(window.piViewportWidth < piBounds.xs2 && window.piCurrentBound !== '3xs') {
-			window.piCurrentBound = '3xs';
+		if(window.navViewportWidth >= navBounds.lg && window.navCurrentBound !== 'lg'){
+			window.navCurrentBound = 'lg';
+		} else if(window.navViewportWidth >= navBounds.md && window.navViewportWidth < navBounds.lg && window.navCurrentBound !== 'md') {
+			window.navCurrentBound = 'md';
+		} else if(window.navViewportWidth >= navBounds.sm && window.navViewportWidth < navBounds.md && window.navCurrentBound !== 'sm') {
+			window.navCurrentBound = 'sm';
+		} else if(window.navViewportWidth >= navBounds.xs && window.navViewportWidth < navBounds.sm && window.navCurrentBound !== 'xs') {
+			window.navCurrentBound = 'xs';
+		} else if(window.navViewportWidth >= navBounds.xs2 && window.navViewportWidth < navBounds.xs && window.navCurrentBound !== '2xs') {
+			window.navCurrentBound = '2xs';
+		} else if(window.navViewportWidth < navBounds.xs2 && window.navCurrentBound !== '3xs') {
+			window.navCurrentBound = '3xs';
 		}
-		if(previousBound !== window.piCurrentBound){
-			$d.trigger('piBoundChanged');
+		if(previousBound !== window.navCurrentBound){
+			$d.trigger('navBoundChanged');
 		}
 
 	}
@@ -169,10 +169,10 @@ jQuery(function($){
 });
 
 
-/*_____ scripts/pi.imagesLoader.js*/
+/*_____ scripts/nav.imagesLoader.js*/
 /* Aura version: 1.8.7 */
 
-function PiImagesLoader($el, callback, delay) {
+function navImagesLoader($el, callback, delay) {
 	"use strict";
 
 	var o = {},
@@ -194,9 +194,9 @@ function PiImagesLoader($el, callback, delay) {
 	o.s.dotDistance = 14;
 	o.s.dotQuantity = 3;
 	o.s.dotAnimationSpeed = 100;
-	o.s.c.loading = 'pi-loader';
-	o.s.c.dot = 'pi-loader-dot';
-	o.s.c.dotActive = 'pi-loader-dot-active';
+	o.s.c.loading = 'nav-loader';
+	o.s.c.dot = 'nav-loader-dot';
+	o.s.c.dotActive = 'nav-loader-dot-active';
 	o.callback = (callback && (typeof(callback) === 'function')) ? callback : function () {
 	};
 
@@ -330,16 +330,16 @@ function PiImagesLoader($el, callback, delay) {
 }
 
 
-/*_____ scripts/pi.ddMenu.js*/
+/*_____ scripts/nav.ddMenu.js*/
 /* Aura version: 1.8.7 */
 
 jQuery(function($){
 	"use strict";
 
 	var $w = $(window),
-		$mainWrapperWidth = $('#pi-all').width(),
-		mainWrapDifference = (window.piViewportWidth - $mainWrapperWidth)/2,
-		classLeftSide = 'pi-submenu-left-side';
+		$mainWrapperWidth = $('#nav-all').width(),
+		mainWrapDifference = (window.navViewportWidth - $mainWrapperWidth)/2,
+		classLeftSide = 'nav-submenu-left-side';
 
 	//region Menu DD side fix
 	function checkMenus($submenu, initialOffset){
@@ -352,7 +352,7 @@ jQuery(function($){
 		}
 	}
 
-	$('.pi-submenu').each(function(){
+	$('.nav-submenu').each(function(){
 
 		var $el = $(this),
 			initialOffset = $el.offset().left - mainWrapDifference,
@@ -361,8 +361,8 @@ jQuery(function($){
 		$w.on('resize', function(){
 			clearTimeout(timer);
 			timer = setTimeout(function(){
-				$mainWrapperWidth = $('#pi-all').width();
-				mainWrapDifference = (window.piViewportWidth - $mainWrapperWidth)/2;
+				$mainWrapperWidth = $('#nav-all').width();
+				mainWrapDifference = (window.navViewportWidth - $mainWrapperWidth)/2;
 				checkMenus($el,initialOffset);
 			}, 200);
 		});
@@ -374,7 +374,7 @@ jQuery(function($){
 });
 
 
-/*_____ scripts/pi.init.removeLastElMargin.js*/
+/*_____ scripts/nav.init.removeLastElMargin.js*/
 /* Aura version: 1.8.7 */
 
 jQuery(function($){
@@ -382,9 +382,9 @@ jQuery(function($){
 
 	//region Remove Last Header Element Margin
 	var $w = $(window),
-		$hrs = $('.pi-section-header'),
-		clsFloatRight = 'pi-pull-right',
-		clsHeaderBlock = 'pi-row-block',
+		$hrs = $('.nav-section-header'),
+		clsFloatRight = 'nav-pull-right',
+		clsHeaderBlock = 'nav-row-block',
 		tmt,
 		hrObjects = [];
 
@@ -451,7 +451,7 @@ jQuery(function($){
 
 
 
-/*_____ scripts/pi.init.sectionHigh.js*/
+/*_____ scripts/nav.init.sectionHigh.js*/
 /* Aura version: 1.8.7 */
 
 jQuery(function($){
@@ -459,7 +459,7 @@ jQuery(function($){
 
 	//region Section Full Height
 	var $w = $(window),
-		$sections = $('.pi-section-high, .pi-block-high'),
+		$sections = $('.nav-section-high, .nav-block-high'),
 		resizeTMT;
 
 	$w.resize(function(){
@@ -472,7 +472,7 @@ jQuery(function($){
 	function setSectionHeight(){
 		$sections.each(function(){
 			var $el = $(this);
-			$el.height(window.piViewportHeight);
+			$el.height(window.navViewportHeight);
 		});
 	}
 
@@ -483,7 +483,7 @@ jQuery(function($){
 });
 
 
-/*_____ scripts/pi.fixedHeader.js*/
+/*_____ scripts/nav.fixedHeader.js*/
 /* Aura version: 1.8.7 */
 
 jQuery(function($){
@@ -492,13 +492,13 @@ jQuery(function($){
 	//region Fixed header
 	var $w = $(window),
 		$b = $('body'),
-		classRow = 'pi-section-w',
-		сlassFixedRow = 'pi-header-row-fixed',
-		сlassFixedRows = 'pi-header-rows-fixed',
+		classRow = 'nav-section-w',
+		сlassFixedRow = 'nav-header-row-fixed',
+		сlassFixedRows = 'nav-header-rows-fixed',
 		сlassFixed = '',
-		classReducible = 'pi-row-reducible',
-		classReduced = 'pi-row-reduced',
-		$stickyHeader = $('.pi-header-sticky'),
+		classReducible = 'nav-row-reducible',
+		classReduced = 'nav-row-reduced',
+		$stickyHeader = $('.nav-header-sticky'),
 		$reducibleRow = $stickyHeader.find('.' + classReducible),
 		rowsQuantity = $stickyHeader.find('.' + classRow).length,
 		reduceTreshold = 400,
@@ -572,7 +572,7 @@ jQuery(function($){
 });
 
 
-/*_____ scripts/pi.mobileMenu.js*/
+/*_____ scripts/nav.mobileMenu.js*/
 /* Aura version: 1.8.7 */
 
 jQuery(function ($) {
@@ -587,12 +587,12 @@ jQuery(function ($) {
 
 		var mobileMenus = [],
 			settings = {
-				classMenuItemHasSubmenu: 'pi-has-dropdown',
-				classParentRowWrapper: 'pi-header-row-sticky',
-				classOpen: 'pi-menu-open',
-				classParentRow: 'pi-section-header-w',
-				classMenuWrapper: 'pi-section-menu-mobile-w',
-				classMenu: 'pi-menu-mobile'
+				classMenuItemHasSubmenu: 'nav-has-dropdown',
+				classParentRowWrapper: 'nav-header-row-sticky',
+				classOpen: 'nav-menu-open',
+				classParentRow: 'nav-section-header-w',
+				classMenuWrapper: 'nav-section-menu-mobile-w',
+				classMenu: 'nav-menu-mobile'
 			};
 
 		function init() {
@@ -600,20 +600,20 @@ jQuery(function ($) {
 			//remove targetting from regular menu in tablet wide mode.
 			$('.' + settings.classMenuItemHasSubmenu).each(function(){
 				$(this).find(' > a').on('click', function(e){
-					if(window.piCurrentBound !== 'lg'){
+					if(window.navCurrentBound !== 'lg'){
 						e.preventDefault();
 					}
 				});
 			});
 
-			$('.pi-mobile-menu-toggler').each(function () {
+			$('.nav-mobile-menu-toggler').each(function () {
 				var $el = $(this);
 
-				if ($el.get(0).piMenuWasInitialized) {
+				if ($el.get(0).navMenuWasInitialized) {
 					return;
 				}
 
-				$el.get(0).piMenuWasInitialized = 1;
+				$el.get(0).navMenuWasInitialized = 1;
 
 				var mobileMenu = {
 					$parentRowWrapper: null,
@@ -657,7 +657,7 @@ jQuery(function ($) {
 					}
 				});
 
-				$d.bind('piBoundChanged', function () {
+				$d.bind('navBoundChanged', function () {
 					if (mobileMenu.state && mobileMenu.$toggler.is(':hidden')) {
 						toggleMenu(mobileMenu);
 					}
@@ -679,10 +679,10 @@ jQuery(function ($) {
 		}
 
 		function toggleSubmenu(mobileMenu, $li) {
-			if ($li.get(0).$list.hasClass('pi-active')) {
+			if ($li.get(0).$list.hasClass('nav-active')) {
 				mobileMenu.height = mobileMenu.height - $li.get(0).listHeight;
 				mobileMenu.$wrapper.height(mobileMenu.height);
-				$li.get(0).$list.removeClass('pi-active');
+				$li.get(0).$list.removeClass('nav-active');
 				$li.get(0).$list.animate({
 					height: 0
 				}, 500, function () {
@@ -691,7 +691,7 @@ jQuery(function ($) {
 			} else {
 				mobileMenu.height = mobileMenu.height + $li.get(0).listHeight;
 				mobileMenu.$wrapper.height(mobileMenu.height);
-				$li.get(0).$list.addClass('pi-active');
+				$li.get(0).$list.addClass('nav-active');
 				$li.get(0).$list.animate({
 					height: $li.get(0).listHeight
 				}, 500, function () {
@@ -699,7 +699,7 @@ jQuery(function ($) {
 					$(this).height('auto');
 				});
 				$li.get(0).$siblings.each(function () {
-					if ($(this).find(' > ul.pi-active').length) {
+					if ($(this).find(' > ul.nav-active').length) {
 						toggleSubmenu(mobileMenu, $(this));
 					}
 				});
@@ -765,7 +765,7 @@ jQuery(function ($) {
 });
 
 
-/*_____ scripts/pi.columnFix.js*/
+/*_____ scripts/nav.columnFix.js*/
 /* Aura version: 1.8.7 */
 
 jQuery(function($){
@@ -773,14 +773,14 @@ jQuery(function($){
 
 //region Columns fix
 	var $w = $(window),
-		$galleries = $('.pi-gallery.pi-column-fix'),
-		$liquidGalleries = $galleries.filter('[class*=pi-liquid-col]');
+		$galleries = $('.nav-gallery.nav-column-fix'),
+		$liquidGalleries = $galleries.filter('[class*=nav-liquid-col]');
 
 	$liquidGalleries.each(function(){
 
 		var $g = $(this),
-			$gItems = $g.find('.pi-gallery-item'),
-			isStacked = $g.hasClass('pi-stacked'),
+			$gItems = $g.find('.nav-gallery-item'),
+			isStacked = $g.hasClass('nav-stacked'),
 			itemsWidthRejected = 0;
 
 		detectColumnSizeNumber($g,'gallery');
@@ -808,7 +808,7 @@ jQuery(function($){
 						$g.css('cssText', 'margin-right: 0 !important');
 					}
 
-					var cols = $g.data('width-' + window.piCurrentBound),
+					var cols = $g.data('width-' + window.navCurrentBound),
 						galleryWidth = $g.width(),
 						galleryItemPadding = parseInt($gItems.eq(0).css('padding-left'), 10) + parseInt($gItems.eq(0).css('padding-right'), 10),
 						galleryWidthWithoutPadding = galleryWidth - cols*galleryItemPadding,
@@ -835,7 +835,7 @@ jQuery(function($){
 
 	});
 
-	var $colsToFix = $('.pi-column-fix').filter('[class*=pi-col-]');
+	var $colsToFix = $('.nav-column-fix').filter('[class*=nav-col-]');
 
 	if($colsToFix.length){
 
@@ -857,7 +857,7 @@ jQuery(function($){
 
 						var $el = $(this),
 							elPadding = parseInt($el.css('padding-left'), 10) + parseInt($el.css('padding-right'), 10),
-							newWidth = Math.floor( $el.parent().width() / 12 * $el.data('width-' + window.piCurrentBound ) ) - elPadding;
+							newWidth = Math.floor( $el.parent().width() / 12 * $el.data('width-' + window.navCurrentBound ) ) - elPadding;
 
 						$(this).width(newWidth);
 
@@ -874,11 +874,11 @@ jQuery(function($){
 	function detectColumnSizeNumber($el, gridType){
 
 		var classesList = $el.attr('class'),
-			gClasses = classesList.match(/pi-liquid-col-\d?\D\D-\d/g) || classesList.match(/pi-col-\d?\D\D-\d/g),
+			gClasses = classesList.match(/nav-liquid-col-\d?\D\D-\d/g) || classesList.match(/nav-col-\d?\D\D-\d/g),
 			bounds = {};
 
 		for(var i = 0; i < gClasses.length; i++){
-			var bound = gClasses[i].match(/pi-liquid-col-(\d?\D\D)-(\d)/i) || gClasses[i].match(/pi-col-(\d?\D\D)-(\d)/i);
+			var bound = gClasses[i].match(/nav-liquid-col-(\d?\D\D)-(\d)/i) || gClasses[i].match(/nav-col-(\d?\D\D)-(\d)/i);
 			if(bound){
 				bounds[bound[1]] = bound[2];
 			}
@@ -921,11 +921,11 @@ jQuery(function($){
 });
 
 
-/*_____ scripts/pi.alert.js*/
+/*_____ scripts/nav.alert.js*/
 /* Aura version: 1.8.7 */
 
 /* ========================================================================
- * PI: pi.alert.js v1.0.0
+ * nav: nav.alert.js v1.0.0
  * BASED ON: bootstrap-alert.js v2.3.2
  * http://getbootstrap.com/2.3.2/javascript.html#alerts
  * ==========================================================
@@ -970,7 +970,7 @@ jQuery(function($){
 
 		e && e.preventDefault();
 
-		$parent.length || ($parent = $this.hasClass('pi-alert') ? $this : $this.parent());
+		$parent.length || ($parent = $this.hasClass('nav-alert') ? $this : $this.parent());
 
 		$parent.trigger(e = $.Event('close'));
 
@@ -1022,15 +1022,15 @@ jQuery(function($){
 	}
 
 
-	/* ALERT DATA-API
+	/* ALERT DATA-Anav
 	 * ============== */
 
-	$(document).on('click.alert.data-api', dismiss, Alert.prototype.close);
+	$(document).on('click.alert.data-anav', dismiss, Alert.prototype.close);
 
 }(window.jQuery);
 
 
-/*_____ scripts/pi.init.formsBlurClasses.js*/
+/*_____ scripts/nav.init.formsBlurClasses.js*/
 /* Aura version: 1.8.7 */
 
 jQuery(function ($) {
@@ -1039,9 +1039,9 @@ jQuery(function ($) {
 	//region Input blur styles
 	var $b = $('body'),
 		cls = {
-			changed: 'pi-form-control-changed',
-			focused: 'pi-form-control-focused',
-			withIcon: 'pi-input-with-icon'
+			changed: 'nav-form-control-changed',
+			focused: 'nav-form-control-focused',
+			withIcon: 'nav-input-with-icon'
 		};
 	$b.delegate('.form-control', 'keyup',function () {
 		var $el = $(this),
@@ -1067,7 +1067,7 @@ jQuery(function ($) {
 });
 
 
-/*_____ scripts/pi.init.placeholder.js*/
+/*_____ scripts/nav.init.placeholder.js*/
 /* Aura version: 1.8.7 */
 
 jQuery(function($){
@@ -1082,7 +1082,7 @@ jQuery(function($){
 });
 
 
-/*_____ scripts/pi.init.jqueryScrollTo.js*/
+/*_____ scripts/nav.init.jqueryScrollTo.js*/
 /* Aura version: 1.8.7 */
 
 jQuery(function($){
@@ -1112,7 +1112,7 @@ jQuery(function($){
 
 				$.scrollTo.window().stop(true);
 
-				if(window.piCurrentBound !== 'lg'){
+				if(window.navCurrentBound !== 'lg'){
 					offset = defaultOffsetMin;
 				} else {
 					offset = initialOffset;
@@ -1134,7 +1134,7 @@ jQuery(function($){
 });
 
 
-/*_____ scripts/pi.scrollTopArrow.js*/
+/*_____ scripts/nav.scrollTopArrow.js*/
 /* Aura version: 1.8.7 */
 
 jQuery(function($){
@@ -1144,9 +1144,9 @@ jQuery(function($){
 
 	var $w = $(window),
 		$d = $(document),
-		$arrow = $('.pi-scroll-top-arrow'),
-		classActive = 'pi-active',
-		classBottom = 'pi-scroll-top-arrow-footer',
+		$arrow = $('.nav-scroll-top-arrow'),
+		classActive = 'nav-active',
+		classBottom = 'nav-scroll-top-arrow-footer',
 		footerHeight = 100,
 		treshold = 400,
 		scrollCheckTmt;
@@ -1167,7 +1167,7 @@ jQuery(function($){
 	function checkArrow(){
 		var scrollTop = $w.scrollTop(),
 			documentHeight = $d.height(),
-			nearFooter = (window.piViewportHeight + scrollTop) >= documentHeight - footerHeight;
+			nearFooter = (window.navViewportHeight + scrollTop) >= documentHeight - footerHeight;
 
 		if(scrollTop >= treshold){
 			$arrow.addClass(classActive);
@@ -1175,7 +1175,7 @@ jQuery(function($){
 			$arrow.removeClass(classActive);
 		}
 
-		if(nearFooter && window.piCurrentBound !== 'lg'){
+		if(nearFooter && window.navCurrentBound !== 'lg'){
 			$arrow.addClass(classBottom);
 		} else {
 			$arrow.removeClass(classBottom);
@@ -1188,39 +1188,39 @@ jQuery(function($){
 });
 
 
-/*_____ scripts/pi.init.social.js*/
+/*_____ scripts/nav.init.social.js*/
 /* Aura version: 1.8.7 */
 
 jQuery(function($){
 	"use strict";
 
 	//region Socials jumps
-	$('.pi-jump a, .pi-jump-bg a').each(function () {
+	$('.nav-jump a, .nav-jump-bg a').each(function () {
 		var $el = $(this);
 		if($el.find('i').length <= 1){
 			$el.append($el.find('i').clone());
 		}
 	});
 
-	$('.pi-social-icons-big a i').wrap('<span></span>');
+	$('.nav-social-icons-big a i').wrap('<span></span>');
 	//endregion
 
 });
 
 
-/*_____ scripts/pi.init.caption.js*/
+/*_____ scripts/nav.init.caption.js*/
 /* Aura version: 1.8.7 */
 
 jQuery(function($){
 	"use strict";
 
 	//region Captions animations
-	$('.pi-overlay-slide:not(.pi-caption-opened)').each(function () {
+	$('.nav-overlay-slide:not(.nav-caption-opened)').each(function () {
 		var $caption = $(this),
-			$parent = $caption.parents('.pi-img-w'),
+			$parent = $caption.parents('.nav-img-w'),
 			height = $caption.outerHeight(true);
 
-		if ($caption.hasClass('pi-show-heading')) {
+		if ($caption.hasClass('nav-show-heading')) {
 			height -= $caption.find('h2,h3,h4,h5,h6').eq(0).outerHeight(true) + parseInt($caption.css('padding-top'), 10);
 		}
 
@@ -1245,17 +1245,17 @@ jQuery(function($){
 });
 
 
-/*_____ scripts/pi.init.submitFormContact.js*/
+/*_____ scripts/nav.init.submitFormContact.js*/
 /* Aura version: 1.8.7 */
 
 jQuery(function($){
 	"use strict";
 
 	//region Init Footer Form submit
-	$('.pi-contact-form').submit(function(){
+	$('.nav-contact-form').submit(function(){
 
 		var $form = $(this),
-			$error = $form.find('.pi-error-container'),
+			$error = $form.find('.nav-error-container'),
 			action  = $form.attr('action');
 
 		$error.slideUp(750, function() {
@@ -1305,14 +1305,14 @@ jQuery(function($){
 });
 
 
-/*_____ scripts/pi.init.colorbox.js*/
+/*_____ scripts/nav.init.colorbox.js*/
 /* Aura version: 1.8.7 */
 
 jQuery(function($){
 	"use strict";
 
 	var $d = $(document),
-		$colorboxLinks = $('.pi-colorbox'),
+		$colorboxLinks = $('.nav-colorbox'),
 
 		//Breakpoints could be 3xs, 2xs, xs, sm, md, lg
 		breakpoints = [
@@ -1323,12 +1323,12 @@ jQuery(function($){
 		colorboxState = 0,
 		colorboxNeeded = 0;
 
-	function piColorboxInit(){
+	function navColorboxInit(){
 
 		colorboxNeeded = 0;
 
 		for(var i in breakpoints){
-			if(breakpoints[i] === window.piCurrentBound){
+			if(breakpoints[i] === window.navCurrentBound){
 				colorboxNeeded = 1;
 				break;
 			}
@@ -1340,7 +1340,7 @@ jQuery(function($){
 					videoData = $el.data('videoSize'),
 					videoSize = videoData ? videoData.split(',') : 0,
 					groupFromData = $el.data('colorboxGroup'),
-					group = groupFromData ? groupFromData : 'pi-group';
+					group = groupFromData ? groupFromData : 'nav-group';
 
 				if(videoSize[0]){
 					videoSize[0] = parseInt(videoSize[0], 10);
@@ -1373,8 +1373,8 @@ jQuery(function($){
 
 	//region colorbox
 	if($.fn.colorbox){
-		$d.bind('piBoundChanged', piColorboxInit);
-		piColorboxInit();
+		$d.bind('navBoundChanged', navColorboxInit);
+		navColorboxInit();
 	}
 	//endregion
 
